@@ -1,0 +1,17 @@
+
+<section>
+  <div>
+    <select [(ngModel)]="convert">
+      <option *ngFor="let text of change_text" value="{{text}}" selected  >{{text}}</option> </select>
+
+      <label >Seleccione tamaño</label>
+    <input type="text" [(ngModel)]="num" name="" placeholder="hello">
+
+    <p>
+     
+      {{num}}
+    {{ texto | formattext:convert| formatdata : num}}
+      
+    </p>
+  </div>
+</section>
